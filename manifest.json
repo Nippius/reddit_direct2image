@@ -1,0 +1,46 @@
+{
+    "manifest_version": 3,
+    "author": "Tiago Costa",
+    "name": "Reddit Direct2Image",
+    "description": "Opens images directly instead of showing reddits image preview page",
+    "version": "1.0",
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "reddit_ext_prev",
+                "enabled": true,
+                "path": "rules/reddit/external_preview.json"
+            },{
+                "id": "reddit_i",
+                "enabled": true,
+                "path": "rules/reddit/i_reddit.json"
+            },{
+                "id": "reddit_prev_redd",
+                "enabled": true,
+                "path": "rules/reddit/preview_reddit.json"
+            },{
+                "id": "reddit_redd",
+                "enabled": true,
+                "path": "rules/reddit/reddit.json"
+            }
+        ]
+    },
+    "permissions": [
+        "declarativeNetRequest"
+    ],
+    "host_permissions": [
+        "https://preview.redd.it/*", 
+        "https://i.redd.it/*", 
+        "https://external-preview.redd.it/*",
+        "https://*.reddit.com/*"
+    ],
+    "icons": {
+        "16": "images/icon-16.png",
+        "32": "images/icon-32.png",
+        "48": "images/icon-48.png",
+        "128": "images/icon-128.png"
+      },
+    "action": {
+      "default_icon": "images/icon-48.png"
+    }
+  }

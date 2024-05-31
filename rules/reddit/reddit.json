@@ -1,0 +1,22 @@
+[
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Accept",
+          "operation": "set",
+          "value": "image/jpeg,*/*"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "|*://*.reddit.com/*",
+      "resourceTypes": [
+        "main_frame"
+      ]
+    }
+  }
+]
